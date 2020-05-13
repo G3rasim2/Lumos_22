@@ -1,0 +1,105 @@
+.header
+	background: url(../img/header/bg-header-mob.jpg) no-repeat center
+	background-size: cover
+	padding-top: 40px
+	padding-bottom: 90px
+	&__wrap
+		text-align: center
+		& h3
+			color: #fff
+			font-size: 18px
+			font-weight: 600
+			line-height: 22px
+			width: 70%
+			margin: auto
+			margin-top: 30px
+		& h1
+			color: #DDA859
+			font-size: 38px
+			font-weight: 700
+			line-height: 43px
+			margin: auto
+			margin-top: 40px
+			margin-bottom: 0
+			max-width: 751px
+	&__data
+		color: #fff
+		font-size: 18px
+		font-weight: 600
+		line-height: 22px
+		margin-top: 15px
+	&__desc
+		color: #fff
+		font-size: 18px
+		font-weight: 600
+		line-height: 23px
+		width: 88%
+		margin: auto
+		margin-top: 15px
+		max-width: 751px
+	&__form
+		margin-top: 40px
+		& input
+			width: 262px
+			font-size: 15px
+			border-radius: 50px
+			border: none
+			padding: 13px 20px 12px 20px
+			margin: 0 15px
+			cursor: pointer
+			transition: .2s
+		& input[type="email"]::placeholder
+			text-transform: uppercase
+			color: #000000
+			font-weight: 300
+		& input[type="email"]:hover::placeholder,
+		& input[type="email"]:focus::placeholder
+			color: #DB0707
+		& input[type="submit"]
+			background: #DB0707
+			color: #fff
+			font-weight: 500
+			margin-top: 15px
+			&:hover,
+			&:focus
+				background: #FB0707
+		& label
+			display: block
+			color: #EDD9D9
+			font-size: 12px
+			font-weight: 300
+			opacity: .7
+			margin-top: 8px
+			cursor: pointer
+			transition: .2s
+
+#checkbox
+	display: none
+#checkbox:checked ~ .header__form label
+	opacity: 1
+
+@media (min-width: 900px)
+	.header
+		background: url(../img/header/bg-header.jpg) no-repeat center
+		padding-top: 75px
+		padding-bottom: 135px
+		&__wrap
+			& img
+				float: left
+				margin-right: -63px
+				margin-top: -35px
+			& h1
+				font-size: 60px
+				font-weight: 800
+				line-height: 72px
+				margin-top: 55px
+		&__desc
+			font-size: 24px
+			line-height: 29px
+			margin-top: 15px
+		&__form
+			margin-top: 60px
+			& input[type="submit"]
+				margin-top: 0
+			& label
+				margin-top: 16px

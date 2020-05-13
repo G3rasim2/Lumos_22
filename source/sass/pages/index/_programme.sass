@@ -1,0 +1,91 @@
+.programme
+	&__wrap
+		width: 94%
+		max-width: 752px
+		margin: auto
+		border: 3px solid #DDA859
+		border-radius: 10px
+		background: #fff
+		transform: translateY(40px)
+		padding-bottom: 20px
+		& h2
+			font-weight: bold
+			font-size: 23px
+			line-height: 26px
+			text-align: center
+			margin-top: 20px
+		& p
+			margin-top: 10px
+			margin-bottom: 10px
+	&__list-1 li,
+	&__list-2 li
+		position: relative
+		margin: 0 5%
+		font-size: 16px
+		line-height: 18px
+		padding-left: 20px
+		&::before
+			content: ''
+			position: absolute
+			top: 5px
+			left: 0
+			width: 10px
+			height: 10px
+			background: #DDA859
+			border-radius: 50%
+	&__list-2 li
+		padding-left: 50px
+	&__list-2 li::before
+		content: ''
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 40px
+		height: 40px
+		font-weight: bold
+		font-size: 24px
+		line-height: 29px
+		color: #fff
+	&__list-2 li:nth-child(1)::before
+		content: '1'
+	&__list-2 li:nth-child(2)::before
+		content: '2'
+	&__list-2 li:nth-child(3)::before
+		content: '3'
+	&__text
+		font-weight: bold
+		font-size: 16px
+		line-height: 18px
+		margin: 0 5%
+	&__title
+		background: #DDA859
+		color: #fff
+		padding: 10px
+
+@media (min-width: 900px)
+	.programme
+		&__wrap
+			transform: translateY(70px)
+			& h2
+				font-size: 30px
+				line-height: 36px
+				margin: 40px 0
+			& p
+				margin-top: 30px
+				margin-bottom: 30px
+		&__list-1 li,
+		&__list-2 li
+			margin: 0 8%
+			font-size: 18px
+			line-height: 22px
+			padding-left: 30px
+			&::before
+				top: 7px
+		&__list-2 li
+			padding-left: 60px
+		&__list-2 li::before
+			top: 0px
+		&__text
+			font-size: 18px
+			line-height: 22px
+			margin: 0 8%

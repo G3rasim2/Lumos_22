@@ -1,0 +1,52 @@
+.footer
+	background: url(../img/footer/footer.jpg) no-repeat center
+	background-size: cover
+	padding: 30px 0
+	&__wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		& h3
+			color: #fff
+			font-size: 18px
+			line-height: 22px
+			text-transform: uppercase
+			margin: 0
+			margin-bottom: 10px
+	&__block-1
+		text-align: left
+		display: flex
+		flex-direction: column
+		margin-right: 20px
+	&__email
+		color: #fff
+		font-size: 18px
+		line-height: 22px
+		margin-bottom: 35px
+	&__btn
+		color: #fff
+		font-size: 14px
+		line-height: 17px
+		text-transform: uppercase
+		text-decoration: none
+		border-radius: 10px
+		background: #EC2808
+		padding: 15px
+		padding-top: 13px
+		margin-bottom: 30px
+		transition: .2s
+		&:hover,
+		&:focus
+			background: #FB0707
+	&__block-2
+		& p
+			font-size: 14px
+			line-height: 17px
+			color: #BDC8D9
+		& div
+			margin-top: 40px
+
+@media (min-width: 590px)
+	.footer
+		&__block-2
+			text-align: right

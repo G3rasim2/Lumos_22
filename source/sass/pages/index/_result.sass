@@ -1,0 +1,94 @@
+.result
+	background: #F4E4F9
+	&__wrap
+		padding-top: 40px
+		padding-bottom: 20px
+		& h2
+			font-size: 23px
+			line-height: 26px
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 30px
+	&__block
+		position: relative
+		background: #fff
+		padding: 35px 18px
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15)
+		border-radius: 5px
+		& p
+			font-size: 16px
+			line-height: 19px
+			& span
+				color: #714271
+		&::before
+			content: ''
+			position: absolute
+			background: #714271 url(../img/result/result.png) no-repeat center
+			top: 0
+			right: 20px
+			width: 40px
+			height: 40px
+	&__user
+		padding-bottom: 30px
+		margin-bottom: 30px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 50%
+			max-width: 262px
+			height: 1px
+			background: #714271
+		& img
+			float: left
+			margin-right: 20px
+			margin-top: -10px
+		& h3
+			font-size: 14px
+			line-height: 17px
+			margin: 0
+		& p
+			font-style: italic
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			text-transform: uppercase
+			margin-top: 10px
+			margin-bottom: 0
+	& a
+		display: block
+		background: #DB0707
+		border-radius: 50px
+		font-weight: 500
+		font-size: 15px
+		line-height: 18px
+		text-align: center
+		color: #fff
+		text-decoration: none
+		width: 100%
+		max-width: 361px
+		padding: 15px
+		margin: auto
+		margin-top: 20px
+		transition: .2s
+		&:hover,
+		&:focus
+			background: #FB0707
+
+.owl-carousel .owl-item img
+	width: auto
+
+@media (min-width: 900px)
+	.result
+		&__wrap
+			padding-top: 60px
+			padding-bottom: 40px
+		& h2
+			font-size: 30px
+			line-height: 36px
+			margin-bottom: 50px
+		& a
+			padding: 20px
+			margin-top: 40px

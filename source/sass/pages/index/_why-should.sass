@@ -1,0 +1,77 @@
+.why-should
+	background: #FFF8EF
+	padding-top: 60px
+	padding-bottom: 30px
+	&__wrap
+		text-align: center
+		& h2
+			font-size: 23px
+			line-height: 26px
+			max-width: 555px
+			margin: auto
+			margin-bottom: 30px
+		& ul
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-start
+			& li
+				position: relative
+				margin: 0 auto
+				width: 100%
+				max-width: 358px
+				margin-bottom: 25px
+				padding-top: 20px
+				&::before,
+				&::after
+					content: ''
+					position: absolute
+				&::before
+					top: 7.5px
+					left: 0
+					width: 100%
+					height: 1px
+					background: #DDA859
+				&::after
+					top: 0
+					left: calc(50% -  7.5px)
+					width: 15px
+					height: 15px
+					background: #DDA859
+					border-radius: 50%
+				& p
+					margin: 0
+					font-size: 18px
+					line-height: 22px
+		& a
+			display: block
+			background: #DB0707
+			border-radius: 50px
+			font-weight: 500
+			font-size: 15px
+			line-height: 18px
+			text-align: center
+			color: #fff
+			text-decoration: none
+			width: 100%
+			max-width: 361px
+			padding: 15px
+			margin: auto
+			margin-top: 20px
+			transition: .2s
+			&:hover,
+			&:focus
+				background: #FB0707
+
+@media (min-width: 900px)
+	.why-should
+		padding-top: 120px
+		padding-bottom: 40px
+		&__wrap
+			& h2
+				font-size: 30px
+				line-height: 36px
+				margin-bottom: 60px
+			& a
+				padding: 20px
+				margin-top: 40px
